@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>  Laughing gas!!  TUM AJEEEEEB HO MANN LO</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(270deg, #ff6ec4, #7873f5);
+        background-size: 400% 400%;
+        animation: bgMove 8s infinite alternate;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    @keyframes bgMove {
+        0% { background-position: left; }
+        100% { background-position: right; }
+    }
+
+    #btn {
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        border-radius: 30px;
+        background: #fff;
+        cursor: pointer;
+        position: absolute;
+        animation: moveBtn 5s infinite alternate ease-in-out;
+    }
+
+    @keyframes moveBtn {
+        0% { transform: translate(-200px, -100px); }
+        50% { transform: translate(200px, 100px); }
+        100% { transform: translate(-100px, 200px); }
+    }
+
+    #content {
+        display: none;
+        text-align: center;
+        animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.5); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    img {
+        width: 200px;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+        color: white;
+        margin-top: 20px;
+        font-size: 24px;
+        text-shadow: 2px 2px 5px black;
+    }
+</style>
+
+</head>
+
+<body>
+
+<button id="btn" onclick="showContent()">Rahul  click here [apne bare m jan lo]</button>
+
+<div id="content">
+    <h2>Dimak ki kami  hai 😄 &</h2>
+    <h6>Tum thode ajeeb ho </h6>
+    <img src="1.jpg" height="auto" width="40%" alt="Image">
+</div>
+
+<script>
+function showContent() {
+    document.getElementById("btn").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
+</script>
+
+</body>
+</html>
