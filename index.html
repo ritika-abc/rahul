@@ -41,6 +41,7 @@
     }
 
     #content {
+        width: 100% !important;
         display: none;
         text-align: center;
         animation: fadeIn 1s ease forwards;
@@ -52,7 +53,7 @@
     }
 
     img {
-        width: 200px;
+        /* width: 200px; */
         border-radius: 20px;
         margin-top: 20px;
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -64,6 +65,7 @@
         font-size: 24px;
         text-shadow: 2px 2px 5px black;
     }
+    
 </style>
 
 </head>
@@ -72,10 +74,11 @@
 
 <button id="btn" onclick="showContent()">Rahul  click here [apne bare m jan lo]</button>
 
-<div id="content">
+<div id="content" class="c">
     <h2>Dimak ki kami  hai 😄 &</h2>
     <h6>Tum thode ajeeb ho </h6>
-    <img src="1.jpg" height="auto" width="40%" alt="Image">
+    <img src="1.jpg" height="auto" width="30%" alt="Image"> <br>
+    <a href="certificate.png" target="_blank"><img src="certificate.png" height="auto" width="30%" alt="Image"></a>
 </div>
 
 <script>
